@@ -1,0 +1,10 @@
+{
+  "extName": {
+    "message": "first-extension",
+    "description": ""
+  },
+  "borderWidth": {
+    "message": "Border width: ",
+    "description": ""
+  }
+}

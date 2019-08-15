@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
-  "name": "first-extension",
-  "version": "2.0",
+  "name": "__MSG_extName__",
+  "version": "3.0",
   "description": "Adds a red border to all webpages matching mozilla.org.",
   "icons": {
     "48": "icon.png"
@@ -20,5 +20,13 @@
       "48": "icon.png"
     },
     "default_title": "click me"
-  }
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": false
+  },
+  "permissions": [
+    "storage"
+  ],
+  "default_locale": "en"
 }
