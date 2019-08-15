@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "__MSG_extName__",
-  "version": "3.0",
+  "version": "4.0",
   "description": "Adds a red border to all webpages matching mozilla.org.",
   "icons": {
     "48": "icon.png"
@@ -9,11 +9,11 @@
   "content_scripts": [
     {
       "matches": ["*://*.mozilla.org/*"],
-      "js": ["content-script.js"]
+      "js": ["browser-polyfill.min.js", "content-script.js"]
     }
   ],
   "background": {
-    "scripts": ["background.js"]
+    "scripts": ["browser-polyfill.min.js", "background.js"]
   },
   "browser_action": {
     "default_icon": {

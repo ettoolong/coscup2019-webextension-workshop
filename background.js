@@ -1,5 +1,5 @@
-chrome.browserAction.onClicked.addListener((tab) => {
-  chrome.tabs.sendMessage(tab.id, {
+browser.browserAction.onClicked.addListener((tab) => {
+  browser.tabs.sendMessage(tab.id, {
     color: 'green'
   });
 });
