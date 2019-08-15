@@ -1,19 +1,25 @@
 {
   "manifest_version": 2,
   "name": "__MSG_extName__",
-  "version": "4.0",
+  "version": "5.0",
   "description": "Adds a red border to all webpages matching mozilla.org.",
   "icons": {
     "48": "icon.png"
   },
+  "__firefox__browser_specific_settings": {
+    "gecko": {
+      "id": "addon@example.com",
+      "strict_min_version": "55.0"
+    }
+  },
   "content_scripts": [
     {
       "matches": ["*://*.mozilla.org/*"],
-      "js": ["browser-polyfill.min.js", "content-script.js"]
+      "js": ["content-script.js"]
     }
   ],
   "background": {
-    "scripts": ["browser-polyfill.min.js", "background.js"]
+    "scripts": ["background.js"]
   },
   "browser_action": {
     "default_icon": {

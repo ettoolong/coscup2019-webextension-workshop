@@ -1,0 +1,14 @@
+{
+  "name": "fifth-extension",
+  "version": "0.0.1",
+  "description": "Adds a red border to all webpages matching mozilla.org.",
+  "license": "MIT",
+  "scripts": {
+    "dev": "webextension-toolbox dev",
+    "build": "webextension-toolbox build",
+    "build:config": "webextension-toolbox build --config ./webext.config.js"
+  },
+  "devDependencies": {
+    "webextension-toolbox": "latest"
+  }
+}
